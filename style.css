@@ -31,25 +31,74 @@
         background: #1C3D5B;
         border-radius: 50%;
         position: absolute;
-        left: 59%;
-        top: -100%;
+        left: 56%;
+        top: -99%;
         z-index: -1;
         overflow: hidden;
-        /* width: 1293px;
-        height: 1293px;
-        background: #1C3D5B;
-        border-radius: 50%;
-        position: absolute;
-        left: 57%;
-        top: -123%;
-        z-index: -1;
-        overflow: hidden; */
+    }
+    
+    nav {
+        padding: 57px 0 65px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .menu {
+        float: right;
+    }
+    
+    .logo {
+        float: left;
+    }
+    /* -------------------- */
+    
+    .menu a {
+        text-decoration: none;
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        padding: 8px 20px;
+        border: 2px solid transparent;
+        border-radius: 22px;
+        margin-left: 20px;
+    }
+    
+    .menu a:not(:last-child):hover {
+        border: 2px solid #FFFFFF;
+        transition: 2s all ease;
+    }
+    
+    .menu .login {
+        border-radius: 24px;
+        padding: 8px 40px;
+        background: #FFFFFF;
+        color: black;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 40px;
+        border: 2px solid transparent;
+        transition: 1.5s all ease;
+    }
+    
+    .menu .login:hover {
+        border: 2px solid #FFFFFF;
+        border-radius: 24px;
+        background: transparent;
+        color: #ffffff;
+    }
+    
+    .menu .menu-btn {
+        display: none;
+        margin-left: 40px;
     }
     
     .hero-section-content-container {
         width: 1200px;
         margin: 0 auto;
-        padding-top: 100px;
     }
     
     .hero-section-content-one {
@@ -89,6 +138,14 @@
     
     .logo-slide {
         margin: 0 auto 64px;
+        max-width: 100%;
+    }
+    
+    .logo-slide img {
+        padding: 0 20px;
+        display: inline-block;
+        float: left;
+        width: 16%;
     }
     
     @media only screen and (max-width: 1310px) {
@@ -101,19 +158,27 @@
             max-width: 100%;
         }
         .hero-section-content-container {
-            max-width: max-content;
+            max-width: 75%;
             margin: 0 auto;
-            padding: 100px 0 0;
         }
         .hero-section-content-one,
         .hero-section-content-two {
-            margin: 0;
+            max-width: max-content;
+            margin: 0 auto;
+            float: none;
+        }
+        .hero-section-content-one h3 {
+            padding: 0;
+        }
+        .logo-slide img {
+            padding: 0 20px;
+            display: inline-block;
             float: left;
-            /* width: 40%; */
+            width: 16%;
         }
     }
     
-    @media only screen and (min-width: 501px) and (max-width: 1070px) {
+    @media only screen and (min-width: 501px) and (max-width: 1140px) {
         .body-container-wrapper,
         .hero-section,
         .hero-section-content-one,
@@ -121,14 +186,48 @@
             width: 100%;
             margin: 0 auto;
             overflow-x: hidden;
+            float: none;
         }
         .hero-section-content-container {
             width: 80%;
             margin: 0 auto;
-            padding: 100px 0 0;
         }
         .hero-section-content-one ul li {
             padding-bottom: 15px;
+        }
+        .logo-slide img {
+            padding: 0 14px;
+            display: inline-block;
+            float: left;
+            width: 16%;
+        }
+        /* --------nav--responsive------- */
+        .menu a {
+            display: none;
+            transition: 1s all ease;
+        }
+        .menu a.menu-btn {
+            float: right;
+            display: block;
+        }
+        .menu.responsive {
+            position: relative;
+            padding-right: 70px;
+            transition: 1s all ease;
+        }
+        .menu.responsive .menu-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .menu.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            margin-top: 40px;
+        }
+        .hero-section-content-one h3 {
+            padding: 0;
         }
     }
     
@@ -147,6 +246,40 @@
             display: block;
             margin: 0 auto;
             max-width: max-content;
+        }
+        .hero-section-content-one h3 {
+            font-size: 39px;
+            padding: 0;
+        }
+        .logo-slide img {
+            padding: 0 3px;
+            display: inline-block;
+            float: left;
+            width: 16%;
+        }
+        /* -------menu responsive--------- */
+        .menu a {
+            display: none;
+            transition: 1s all ease;
+        }
+        .menu a.menu-btn {
+            float: right;
+            display: block;
+        }
+        .menu.responsive {
+            position: relative;
+            padding-right: 70px;
+            transition: 1s all ease;
+        }
+        .menu.responsive .menu-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .menu.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
         }
     }
     /* ------------buttons-------------- */
@@ -184,9 +317,10 @@
     }
     
     .btn-white:hover {
-        background: #65E4A3;
-        border: 2px solid #65E4A3;
+        background: #ffffff;
+        border: 2px solid #ffffff;
         transition: all 2s ease;
+        color: #000000;
     }
     /* <!-----------------services-sec---------------> */
     
@@ -204,7 +338,7 @@
     }
     
     .services-sec h3 {
-        font-family: 'Manrope', ;
+        font-family: 'Manrope';
         text-align: center;
         color: #000000;
         max-width: 842px;
@@ -249,9 +383,10 @@
         max-width: max-content;
     }
     
-    .arrow-right {
+    .services-sec i {
+        font-size: 23px;
+        margin-left: 12px;
         vertical-align: middle;
-        padding-left: 12px;
     }
     
     .serv-img {
@@ -307,8 +442,11 @@
             float: left;
             margin: 80px auto 0;
         }
+        .services-sec h3 {
+            font-size: 39px;
+        }
     }
-    /* ---------------hero-sec---------- */
+    /* --------------- .customer-contact-sec---------- */
     
     .customer-contact {
         max-width: max-content;
@@ -343,16 +481,6 @@
         display: block;
     }
     
-    li,
-    a {
-        text-decoration: none;
-        list-style-type: none;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
-        padding-bottom: 24px;
-    }
-    
     .customer-img {
         width: 100%;
         display: block;
@@ -364,9 +492,11 @@
         margin: -63% 3% auto auto;
     }
     
-    .tick {
+    .customer-contact i {
         vertical-align: middle;
         padding-right: 27px;
+        font-size: 36px;
+        color: #0A2640;
     }
     
     .btn-blue {
@@ -411,7 +541,7 @@
     @media only screen and (max-width: 600px) {
         .customer-contact {
             width: 100%;
-            margin: 197px auto 0;
+            margin: 77px auto 0;
         }
         .customer-contact-col-one,
         .customer-contact-col-two {
@@ -475,6 +605,7 @@
         color: #0A2640;
         line-height: 28px;
         display: block;
+        margin-bottom: 24px;
     }
     
     .customer-serv-text:hover {
@@ -483,15 +614,21 @@
         transition: all 2s ease;
     }
     
+    .customer-active {
+        margin-bottom: 24px;
+    }
+    
     .customer-active:hover {
         background: #ffff;
         color: #0A2640;
         transition: all 2s ease;
     }
     
-    .icons {
+    .customer-services i {
         vertical-align: middle;
-        padding-right: 16px;
+        padding: 0 25px;
+        font-size: 24px;
+        color: #0A2640;
     }
     
     .services-img {
@@ -531,11 +668,11 @@
     @media only screen and (max-width: 500px) {
         .customer-services {
             width: auto;
-            margin: 197px auto 0;
+            margin: 67px auto 0;
         }
         .customer-services-column-one,
         .customer-services-column-one {
-            width: 95%;
+            width: 90%;
             float: none;
             margin: 0 auto;
         }
@@ -552,7 +689,6 @@
     }
     
     .h3 h3 {
-        padding: 0 0 0 0;
         font-family: 'Manrope';
         font-weight: 400;
         font-size: 48px;
@@ -568,8 +704,7 @@
     
     .testimonials-col-wrapper {
         margin: 96px auto;
-        max-width: 1050px;
-        padding: 96px 0;
+        max-width: 1100px;
     }
     
     .test-col {
@@ -583,8 +718,18 @@
     }
     
     .arrows {
+        float: left;
+        margin-left: -30px;
+        width: 98.8%;
+        margin: 0 auto;
+    }
+    
+    .testimonials-wrapper i {
+        font-size: 68px;
+        background: #0A2640;
+        color: #ffffff;
         float: right;
-        margin-top: -70px;
+        padding-left: 30px;
     }
     
     .test-text {
@@ -624,7 +769,7 @@
     
     @media only screen and (max-width: 1050px) {
         .testimonials-wrapper {
-            width: 90%;
+            width: 100%;
             margin: 120px auto 0;
         }
         .testimonials-col-wrapper {
@@ -637,6 +782,9 @@
         .arrows {
             float: none;
             margin-top: 40px;
+        }
+        .h3 h3 {
+            padding-left: 20px;
         }
     }
     
@@ -652,20 +800,29 @@
             float: none;
             width: 50%;
         }
+        .h3 h3 {
+            padding-left: 20px;
+        }
     }
     
     @media only screen and (max-width:690px) {
         .testimonials-wrapper {
             width: auto;
+            margin: 0 auto;
+            padding-bottom: 40px;
         }
         .testimonials-col-wrapper {
             width: 80%;
             margin: 0 auto;
+            padding: 0;
         }
         .test-col {
             float: none;
             width: 96%;
             margin: 72px auto 0;
+        }
+        .h3 h3 {
+            font-size: 38px;
         }
     }
     /* ----------------customer-links---------------- */
@@ -718,8 +875,12 @@
         width: 500px;
     }
     
-    .down-arrow {
+    .customer-links i {
         float: right;
+        font-size: 24px;
+        vertical-align: middle;
+        display: inline-block;
+        color: #0A2640;
     }
     
     @media only screen and (max-width: 1130px) {
@@ -751,11 +912,11 @@
     @media only screen and (max-width: 600px) {
         .customer-links {
             width: 97%;
-            margin: 124px auto 0;
+            margin: 74px auto 0;
         }
         .customer-links-col-one,
         .customer-links-col-two {
-            width: 98%;
+            width: 95%;
             margin: 56px auto 0;
             float: none;
         }
@@ -779,7 +940,7 @@
     }
     
     .blog-sec h3 {
-        font-family: 'Manrope', ;
+        font-family: 'Manrope';
         text-align: center;
         color: #000000;
         max-width: 842px;
@@ -872,6 +1033,16 @@
             margin: 80px auto 0;
         }
     }
+    
+    @media only screen and (max-width:750px) {
+        .blog-sec {
+            margin: 60px auto 0;
+        }
+        .blog-sec h3 {
+            font-size: 39px;
+            padding: 0 10px;
+        }
+    }
     /* ------------------------form--------------------- */
     
     .submit {
@@ -950,7 +1121,11 @@
         }
         .submit {
             width: auto;
-            margin: 80px auto 0;
+            margin: 70px auto 0;
+        }
+        .submit h3 {
+            font-size: 38px;
+            padding: 0 20px;
         }
     }
     /* -----------------------------footer--------------------------- */
@@ -990,6 +1165,7 @@
         font-size: 20px;
         line-height: 32px;
         color: #777777;
+        margin-bottom: 24px;
     }
     
     .bag h6,
@@ -1022,8 +1198,12 @@
     }
     
     @media only screen and (max-width: 690px) {
+        .links {
+            width: max-content;
+            margin: 50px 0 0;
+            float: none;
+        }
         .about,
-        .links,
         .link-1,
         .link-2,
         .link-3 {
@@ -1034,6 +1214,6 @@
         }
         footer {
             width: auto;
-            margin: 80px auto 0;
+            margin: 70px auto 0;
         }
     }
