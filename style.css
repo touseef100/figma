@@ -64,11 +64,12 @@
         border: 2px solid transparent;
         border-radius: 22px;
         margin-left: 20px;
+        transition: 0.5s all ease;
     }
     
     .menu a:not(:last-child):hover {
         border: 2px solid #FFFFFF;
-        transition: 2s all ease;
+        transition: 0.5s all ease;
     }
     
     .menu .login {
@@ -81,7 +82,7 @@
         line-height: 24px;
         margin-left: 40px;
         border: 2px solid transparent;
-        transition: 1.5s all ease;
+        transition: 0.5s all ease;
     }
     
     .menu .login:hover {
@@ -89,6 +90,7 @@
         border-radius: 24px;
         background: transparent;
         color: #ffffff;
+        transition: 0.5s all ease;
     }
     
     .menu .menu-btn {
@@ -173,7 +175,7 @@
         .logo-slide img {
             padding: 0 20px;
             display: inline-block;
-            float: left;
+            /* float: left; */
             width: 16%;
         }
     }
@@ -198,7 +200,7 @@
         .logo-slide img {
             padding: 0 14px;
             display: inline-block;
-            float: left;
+            /* float: left; */
             width: 16%;
         }
         /* --------nav--responsive------- */
@@ -232,11 +234,19 @@
     }
     
     @media only screen and (max-width: 565px) {
+        .hero-section {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .hero-section-content-container {
+            width: 100%;
+        }
+        .hero-section-content-container,
         .hero-section-content-one,
         .hero-section-content-two {
             float: none;
-            max-width: 95%;
-            margin: 0 auto;
+            max-width: 100%;
         }
         .hero-section,
         .hero-section-content-container {
@@ -249,7 +259,8 @@
         }
         .hero-section-content-one h3 {
             font-size: 39px;
-            padding: 0;
+            padding: 0 0 20px 0;
+            line-height: 55px;
         }
         .logo-slide img {
             padding: 0 3px;
@@ -269,7 +280,7 @@
         .menu.responsive {
             position: relative;
             padding-right: 70px;
-            transition: 1s all ease;
+            transition: 0.5 all ease;
         }
         .menu.responsive .menu-btn {
             position: absolute;
@@ -295,6 +306,7 @@
         background: #65E4A3;
         color: #0A2640;
         text-decoration: none;
+        transition: 0.5s all ease;
     }
     
     .btn-white {
@@ -308,21 +320,22 @@
         background: transparent;
         color: #FFFFFF;
         text-decoration: none;
+        transition: 0.5s all ease;
     }
     
     .btn-green:hover {
         background: #FFFFFF;
         border: 2px solid #FFFFFF;
-        transition: all 2s ease;
+        transition: 0.5s all ease;
     }
     
     .btn-white:hover {
         background: #ffffff;
         border: 2px solid #ffffff;
-        transition: all 2s ease;
+        transition: 0.5s all ease;
         color: #000000;
     }
-    /* <!-----------------services-sec---------------> */
+    /* -----------------------------services-sec--------------------------- */
     
     .services-sec {
         /* width: 100%; */
@@ -378,15 +391,17 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 36px;
-        display: block;
+        display: inline-block;
         border-bottom: 1px solid #0A2640;
         max-width: max-content;
+        text-decoration: none;
+        color: #0A2640;
     }
     
     .services-sec i {
         font-size: 23px;
         margin-left: 12px;
-        vertical-align: middle;
+        padding-bottom: 3px;
     }
     
     .serv-img {
@@ -429,21 +444,26 @@
     }
     
     @media only screen and (max-width:660px) {
+        .services-sec {
+            margin: 40px auto 0;
+            padding: 0 15px;
+        }
         .body-container-wrapper {
             width: auto;
             margin: 0 auto;
         }
         .services-sec-column-wrapper {
             margin: 0 auto;
-            max-width: 90%;
+            max-width: 60%;
         }
         .services-sec-column {
-            width: calc(90%);
+            width: 100%;
             float: left;
-            margin: 80px auto 0;
+            margin: 40px auto 0;
         }
         .services-sec h3 {
             font-size: 39px;
+            line-height: 55px;
         }
     }
     /* --------------- .customer-contact-sec---------- */
@@ -494,7 +514,7 @@
     
     .customer-contact i {
         vertical-align: middle;
-        padding-right: 27px;
+        padding-right: 20px;
         font-size: 36px;
         color: #0A2640;
     }
@@ -511,12 +531,13 @@
         background: #0A2640;
         font-size: 20px;
         font-weight: 700;
+        transition: 0.5s all ease;
     }
     
     .btn-blue:hover {
         border: 2px solid #0A2640;
         background: white;
-        transition: all 2s ease;
+        transition: 0.5s all ease;
         color: #0A2640;
     }
     
@@ -536,18 +557,36 @@
             margin: 0 auto;
             padding-left: 0;
         }
+        .customer-text {
+            width: 100%;
+        }
     }
     
     @media only screen and (max-width: 600px) {
         .customer-contact {
+            width: 80%;
+            margin: 197px auto 0;
+            padding: 0 15px;
+        }
+        .customer-contact {
             width: 100%;
             margin: 77px auto 0;
         }
-        .customer-contact-col-one,
-        .customer-contact-col-two {
-            width: 97%;
+        .customer-contact-col-one {
+            width: 80%;
             float: none;
             margin: 0 auto;
+            padding: 0;
+        }
+        .customer-contact-col-two {
+            width: 100%;
+            float: none;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .customer-text {
+            font-size: 90%;
+            max-width: 100%;
         }
     }
     /*---------customer-services-------------*/
@@ -555,7 +594,6 @@
     .customer-services {
         max-width: 1100px;
         margin: 120px auto 0;
-        padding-bottom: 100px;
     }
     
     .customer-services h3 {
@@ -590,6 +628,7 @@
         font-size: 16px;
         color: #FFFFFF;
         line-height: 28px;
+        margin-bottom: 24px;
         display: block;
     }
     
@@ -614,10 +653,6 @@
         transition: all 2s ease;
     }
     
-    .customer-active {
-        margin-bottom: 24px;
-    }
-    
     .customer-active:hover {
         background: #ffff;
         color: #0A2640;
@@ -632,15 +667,8 @@
     }
     
     .services-img {
-        width: 100%;
-        display: block;
-        height: 523px;
-    }
-    
-    .services-img-2 {
-        display: block;
         max-width: 100%;
-        margin: -63% 0 auto auto;
+        display: block;
     }
     
     li,
@@ -652,7 +680,7 @@
     @media only screen and (max-width: 1110px) {
         .customer-services {
             width: 98%;
-            margin: 197px auto 0;
+            margin: 97px auto 0;
         }
         .customer-services-column-one,
         .customer-services-column-two {
@@ -668,16 +696,22 @@
     @media only screen and (max-width: 500px) {
         .customer-services {
             width: auto;
-            margin: 67px auto 0;
+            margin: 47px auto 0;
+            padding: 0 15px;
         }
         .customer-services-column-one,
         .customer-services-column-one {
-            width: 90%;
+            width: 100%;
             float: none;
             margin: 0 auto;
         }
         .customer-services h3 {
-            padding: 0;
+            padding: 0 0 35px;
+        }
+        .customer-serv-text,
+        .customer-active {
+            max-width: 100%;
+            font-size: 90%;
         }
     }
     /* ----------------testimonials-wrapper---------------- */
@@ -771,6 +805,7 @@
         .testimonials-wrapper {
             width: 100%;
             margin: 120px auto 0;
+            padding: 30px 0;
         }
         .testimonials-col-wrapper {
             max-width: 100%;
@@ -782,6 +817,7 @@
         .arrows {
             float: none;
             margin-top: 40px;
+            margin-left: -2%;
         }
         .h3 h3 {
             padding-left: 20px;
@@ -795,6 +831,7 @@
         .testimonials-col-wrapper {
             width: 100%;
             margin: 0 auto;
+            padding: 40px 0;
         }
         .test-col {
             float: none;
@@ -808,21 +845,60 @@
     @media only screen and (max-width:690px) {
         .testimonials-wrapper {
             width: auto;
-            margin: 0 auto;
-            padding-bottom: 40px;
+            margin: 50px auto 0;
+            padding: 15px;
         }
         .testimonials-col-wrapper {
-            width: 80%;
-            margin: 0 auto;
+            width: 700%;
             padding: 0;
         }
         .test-col {
             float: none;
-            width: 96%;
+            width: 70%;
             margin: 72px auto 0;
         }
         .h3 h3 {
-            font-size: 38px;
+            font-size: 35px;
+            line-height: 50px;
+            padding: 35px 15px 0;
+        }
+        .test-text {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .arrows {
+            float: none;
+            padding-right: 8px;
+        }
+    }
+    
+    @media only screen and (max-width:500px) {
+        .testimonials-wrapper {
+            width: auto;
+            margin: 50px auto 0;
+            padding: 15px;
+        }
+        .testimonials-col-wrapper {
+            width: 700%;
+            padding: 0;
+        }
+        .test-col {
+            float: none;
+            width: 94%;
+            margin: 72px auto 0;
+        }
+        .h3 h3 {
+            font-size: 35px;
+            line-height: 50px;
+            padding: 35px 15px 0;
+        }
+        .test-text {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .arrows {
+            float: none;
+            padding-right: 8px;
         }
     }
     /* ----------------customer-links---------------- */
@@ -841,7 +917,7 @@
         display: block;
     }
     
-    h3 {
+    .customer-links h3 {
         max-width: 100%;
         font-family: 'Manrope';
         font-weight: 400;
@@ -911,17 +987,27 @@
     
     @media only screen and (max-width: 600px) {
         .customer-links {
-            width: 97%;
+            width: 100%;
             margin: 74px auto 0;
+            padding: 0 15px;
         }
         .customer-links-col-one,
         .customer-links-col-two {
-            width: 95%;
+            width: 100%;
             margin: 56px auto 0;
             float: none;
         }
         .down-arrow {
             padding-left: 20px;
+        }
+        .customer-links h3 {
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .links-text {
+            font-size: 100%;
+            max-width: 100%;
+            text-align: left;
         }
     }
     /* ----------------blog-wrapper---------------- */
@@ -1028,19 +1114,24 @@
             max-width: 90%;
         }
         .blog-sec-column {
-            width: 90%;
+            width: 70%;
             float: none;
             margin: 80px auto 0;
         }
     }
     
-    @media only screen and (max-width:750px) {
+    @media only screen and (max-width:500px) {
         .blog-sec {
             margin: 60px auto 0;
         }
         .blog-sec h3 {
-            font-size: 39px;
-            padding: 0 10px;
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .blog-sec-column-wrapper,
+        .blog-sec-column {
+            max-width: 98%;
+            margin: 20px auto 0;
         }
     }
     /* ------------------------form--------------------- */
@@ -1074,7 +1165,7 @@
         line-height: 72px;
         text-align: center;
         color: #FFFFFF;
-        width: 716px;
+        max-width: 716px;
         margin: 0 auto;
         display: block;
         padding-top: 72px;
@@ -1124,8 +1215,22 @@
             margin: 70px auto 0;
         }
         .submit h3 {
-            font-size: 38px;
-            padding: 0 20px;
+            font-size: 33px;
+            padding: 40px 15px 0;
+            line-height: 48px;
+        }
+        .form-column-wrapper {
+            max-width: 70%;
+            margin: 0 auto 74px;
+        }
+        .form-col-email {
+            margin: 50px auto 0;
+            float: none;
+        }
+        .form-col-btn {
+            float: none;
+            max-width: max-content;
+            margin: 50px auto 0;
         }
     }
     /* -----------------------------footer--------------------------- */
@@ -1139,6 +1244,14 @@
         max-width: 300px;
         margin: 100px 179px 0 100px;
         float: left;
+    }
+    
+    .ft-text {
+        padding: 40px 0 100px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #777777;
     }
     
     .links {
@@ -1193,14 +1306,14 @@
         }
         footer {
             width: 98%;
-            margin: 84px auto 0;
+            margin: 44px auto 0;
         }
     }
     
     @media only screen and (max-width: 690px) {
         .links {
             width: max-content;
-            margin: 50px 0 0;
+            margin: 25px 0 0;
             float: none;
         }
         .about,
@@ -1208,12 +1321,22 @@
         .link-2,
         .link-3 {
             width: max-content;
-            margin: 50px 0 0;
+            margin: 0 0 0;
             float: none;
-            padding-left: 20px;
+            padding-left: 15px;
+        }
+        .ft-text {
+            padding: 23px 0;
+            line-height: 22px;
+        }
+        .links li,
+        .links a {
+            margin-bottom: 14px;
+            line-height: 27px;
+            font-size: 16px;
         }
         footer {
             width: auto;
-            margin: 70px auto 0;
+            margin: 60px auto 0;
         }
     }
