@@ -1,0 +1,829 @@
+@media only screen and (max-width: 1199px) {
+    /* ------hero-sec----- */
+    .hero-section {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .hero-section-content-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hero-section-content-one,
+    .hero-section-content-two {
+        width: 43%;
+        margin: 0 auto;
+    }
+    .hero-section-content-one h3 {
+        padding-top: 15px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .hero-section-content-one li {
+        padding-top: 20px;
+    }
+    .btn-green,
+    .btn-white {
+        padding: 14px 40px;
+    }
+    .logo-slide img {
+        padding: 0 20px;
+        display: inline-block;
+        width: 16%;
+    }
+    /* --------customer--contact---- */
+    .customer-contact {
+        width: 100%;
+        margin: 100px auto 0;
+        padding: 0 15px;
+    }
+    .customer-contact-col-one {
+        margin: 0 auto;
+        width: 40%;
+        float: left;
+    }
+    .customer-contact-col-two {
+        margin: 0 auto;
+        float: right;
+        width: 50%;
+        padding: 35px 0 0;
+    }
+    .customer-contact-col-two h3 {
+        font-size: 28px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+    .customer-text {
+        font-size: 100%;
+        padding-bottom: 12px;
+    }
+    .customer-contact i {
+        font-size: 26px;
+    }
+    /* --------customer--services---- */
+    .customer-services {
+        margin: 80px auto 0;
+        padding: 0 15px;
+    }
+    .customer-services-column-one {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .customer-services-column-two {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .customer-services h3 {
+        font-size: 28px;
+        line-height: 40px;
+        padding: 0 0 30px;
+    }
+    .customer-serv-text,
+    .customer-active {
+        font-size: 87%;
+        width: 100%;
+        padding: 13px 0;
+    }
+    .customer-services i {
+        font-size: 20px;
+    }
+    /* --------testimonials---------- */
+    .testimonials-wrapper {
+        width: 100%;
+        margin: 100px auto 0;
+        padding: 30px 0;
+    }
+    .testimonials-col-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .arrows {
+        left: 83%;
+        top: 12%;
+    }
+    .h3 h3 {
+        padding-left: 11px;
+        line-height: 68px;
+        font-size: 42px;
+    }
+    /* -----------customer-links------------ */
+    .customer-links {
+        width: 100%;
+        margin: 100px auto 0;
+        padding: 0 15px;
+    }
+    .customer-links-col-one,
+    .customer-links-col-two {
+        width: 48%;
+        margin: 56px auto 0;
+    }
+    .customer-links h3 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .links-text {
+        font-size: 17px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+    /* -------blogs--sec-------- */
+    .blog-sec {
+        width: 100%;
+        margin: 80px auto 0;
+    }
+    .blog-sec h3 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 62px;
+    }
+    .blog-sec-column-wrapper {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    .blog-sec-column {
+        width: calc(50% - 50px);
+        float: left;
+        margin: 80px 25px 0;
+    }
+    /* -----form----submit--------- */
+    .submit {
+        width: 100%;
+        margin: 80px auto 0;
+    }
+    .form-column-wrapper {
+        width: 100%;
+        margin: 0 auto 74px;
+    }
+    /* ------------footer---------- */
+    footer {
+        width: 100%;
+        margin: 100px auto 0;
+        padding: 0 15px 60px;
+    }
+    .link-1,
+    .link-2 {
+        float: left;
+        margin-right: 75px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-section {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .hero-section-content-container {
+        width: 100%;
+    }
+    .hero-section-content-one,
+    .hero-section-content-two {
+        width: 50%;
+        margin: 0 auto;
+        padding-right: 10px;
+    }
+    .hero-section-content-one h3 {
+        padding-top: 35px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hero-section-content-one li {
+        padding-top: 10px;
+    }
+    .btn-green,
+    .btn-white {
+        padding: 10px 35px;
+    }
+    nav {
+        padding: 25px 0;
+    }
+    .logo-slide img {
+        padding: 0 20px;
+        display: inline-block;
+        width: 16%;
+    }
+    /* --------nav--responsive------- */
+    .menu a {
+        display: none;
+        transition: 1s all ease;
+    }
+    .menu a.menu-btn {
+        float: right;
+        display: block;
+    }
+    .menu.responsive {
+        position: relative;
+        padding-right: 70px;
+        transition: 1s all ease;
+    }
+    .menu.responsive .menu-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top: 40px;
+    }
+    /* ------service--sec--------- */
+    .services-sec-column-wrapper {
+        margin: 0 auto;
+        width: 75%;
+    }
+    .services-sec-column {
+        width: calc(50% - 50px);
+        float: left;
+        margin: 50px 25px 0;
+    }
+    .services-sec h3 {
+        font-size: 36px;
+        line-height: 49px;
+    }
+    /* --------testimonials---------- */
+    .testimonials-wrapper {
+        width: 100%;
+        margin: 75px auto 0;
+        padding: 30px 0;
+    }
+    .testimonials-col-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .test-col {
+        width: calc(50% - 30px);
+        margin: 50px 15px 0;
+    }
+    .arrows {
+        /* margin: 0 11px; */
+        float: right;
+    }
+    .h3 h3 {
+        font-size: 36px;
+        line-height: 68px;
+        padding-left: 20px;
+    }
+    /* -----------customer-links------------ */
+    .customer-links {
+        width: 100%;
+        margin: 100px auto 0;
+        padding: 0 15px;
+    }
+    .customer-links-col-one,
+    .customer-links-col-two {
+        width: 48%;
+        margin: 56px auto 0;
+    }
+    .customer-links h3 {
+        font-size: 27px;
+        line-height: 50px;
+    }
+    .links-text {
+        font-size: 17px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+    .customer-links i {
+        margin-top: 3px;
+        font-size: 22px;
+    }
+    /* ---------blogs----sec------ */
+    .blog-sec {
+        width: 100%;
+        margin: 60px auto 0;
+    }
+    .blog-sec h3 {
+        font-size: 33px;
+        line-height: 48px;
+    }
+    .blog-sec-column-wrapper {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    .blog-sec-column {
+        width: calc(50% - 30px);
+        margin: 60px 15px 0;
+    }
+    /* -------form-submit---- */
+    .submit {
+        width: auto;
+        margin: 80px auto 0;
+    }
+    .submit h3 {
+        font-size: 38px;
+        line-height: 52px;
+    }
+    .form-column-wrapper {
+        width: 95%;
+        margin: 0 auto 74px;
+    }
+    /* ----------footer--------------- */
+    .ft-text {
+        padding: 28px 0;
+        font-size: 15px;
+        line-height: 29px;
+    }
+    .links li {
+        margin-bottom: 24px;
+    }
+    .links a {
+        line-height: 27px;
+        font-size: 15px;
+    }
+    footer {
+        width: 100%;
+        margin: 60px auto 0;
+        padding: 0 15px 60px;
+    }
+}
+
+@media only screen and (max-width: 797px) {
+    .hero-section {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .hero-section-content-container {
+        margin: 0 auto;
+    }
+    .hero-section-content-one,
+    .hero-section-content-two {
+        width: 71%;
+        margin: 0 auto;
+        float: none;
+        padding: 0 0 20px;
+    }
+    .hero-section-content-one h3 {
+        padding-top: 15px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .hero-section-content-one li {
+        padding-top: 20px;
+    }
+    .btn-green,
+    .btn-white {
+        padding: 14px 40px;
+    }
+    nav {
+        padding: 25px 0;
+    }
+    .logo-slide {
+        margin-bottom: 20px;
+    }
+    .logo-slide img {
+        padding: 0 20px;
+        display: inline-block;
+        width: 16%;
+    }
+    /* --------nav--responsive------- */
+    .menu a {
+        display: none;
+        transition: 1s all ease;
+    }
+    .menu a.menu-btn {
+        float: right;
+        display: block;
+    }
+    .menu.responsive {
+        position: relative;
+        padding-right: 70px;
+        transition: 1s all ease;
+    }
+    .menu.responsive .menu-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top: 40px;
+    }
+    /* ------services---sec---- */
+    .services-sec-column-wrapper {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .services-sec-column {
+        width: calc(50% - 50px);
+        float: left;
+        margin: 50px 25px 0;
+    }
+    .services-sec h3 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    /* -----customer--contact--sec---- */
+    .customer-contact {
+        width: 100%;
+        margin: 65px auto 0;
+        padding: 0 15px;
+    }
+    .customer-contact-col-one,
+    .customer-contact-col-two {
+        width: 60%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .customer-text {
+        font-size: 90%;
+        max-width: 100%;
+    }
+    /* --------customer--services---- */
+    .customer-services {
+        width: 100%;
+        margin: 65px auto 0;
+        padding: 0 15px;
+    }
+    .customer-services-column-one,
+    .customer-services-column-two {
+        width: 60%;
+        margin: 0 auto;
+        float: none;
+    }
+    .customer-services h3 {
+        font-size: 28px;
+        line-height: 40px;
+        padding: 0 0 30px;
+    }
+    .customer-serv-text,
+    .customer-active {
+        font-size: 87%;
+        width: 100%;
+        padding: 13px 0;
+    }
+    .customer-services i {
+        font-size: 20px;
+    }
+    /* --------testimonials---------- */
+    .testimonials-wrapper {
+        width: 100%;
+        margin: 55px auto 0;
+        padding: 0 15px;
+    }
+    .testimonials-col-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .test-col {
+        width: 60%;
+        margin: 40px auto 0;
+    }
+    .arrows {
+        float: none;
+        margin: 15px auto 0;
+    }
+    .h3 {
+        float: none;
+        width: 100%;
+    }
+    .h3 h3 {
+        width: 100%;
+        font-size: 36px;
+        line-height: 53px;
+        padding: 30px 0 0 0
+    }
+    /* -------customer-links-------- */
+    .customer-links {
+        width: 100%;
+        margin: 65px auto 0;
+        padding: 0 15px;
+    }
+    .customer-links-col-one,
+    .customer-links-col-two {
+        width: 60%;
+        margin: 56px auto 0;
+        float: none;
+    }
+    .customer-links h3 {
+        font-size: 27px;
+        line-height: 50px;
+    }
+    .links-text {
+        font-size: 90%;
+        width: 100%;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+    .customer-links i {
+        font-size: 20px;
+        vertical-align: bottom;
+        margin-top: 5px;
+    }
+    /* -------form-submit-------- */
+    .submit {
+        width: 100%;
+        margin: 70px auto 0;
+    }
+    .form-col-email,
+    .form-col-btn {
+        float: none;
+        margin: 50px auto 0;
+    }
+    .submit h3 {
+        font-size: 33px;
+        padding: 40px 15px 0;
+        line-height: 48px;
+    }
+    /* ----------footer-------- */
+    footer {
+        width: 100%;
+        margin: 50px auto 0;
+        padding: 0 15px 50px;
+    }
+    .about,
+    .links {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    .ft-text {
+        padding: 30px 0;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .hero-section {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .hero-section-content-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hero-section-content-one,
+    .hero-section-content-two {
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        padding: 0 0 20px;
+    }
+    .hero-section-content-one h3 {
+        padding-top: 0;
+        font-size: 31px;
+        line-height: 35px;
+    }
+    .hero-section-content-one li {
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+        padding: 10px;
+    }
+    .btn-green,
+    .btn-white {
+        padding: 9px 42px;
+    }
+    nav {
+        padding: 25px 0 20px;
+    }
+    .hero-section-content-one p {
+        font-size: 13px;
+    }
+    .logo-slide img {
+        padding: 0 4px;
+        display: inline-block;
+        width: 16%;
+    }
+    .logo-slide {
+        margin-bottom: 20px;
+    }
+    /* --------nav--responsive------- */
+    .menu a {
+        display: none;
+        transition: 1s all ease;
+    }
+    .menu a.menu-btn {
+        float: right;
+        display: block;
+    }
+    .menu.responsive {
+        position: relative;
+        padding-right: 70px;
+        transition: 1s all ease;
+    }
+    .menu.responsive .menu-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top: 40px;
+    }
+    /* ------services--sec--- */
+    .services-sec {
+        width: 100%;
+        margin: 35px auto 0;
+        padding: 0 15px;
+    }
+    .services-sec-column-wrapper {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .services-sec-column {
+        width: 82%;
+        float: none;
+        margin: 30px auto 0;
+    }
+    .services-sec h3 {
+        font-size: 27px;
+        line-height: 37px;
+    }
+    /* -------customer--contact-sec-- */
+    .customer-contact {
+        width: 100%;
+        margin: 50px auto 0;
+        padding: 0 15px;
+    }
+    .customer-contact-col-one,
+    .customer-contact-col-two {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .customer-contact-col-two h3 {
+        font-size: 24px;
+        line-height: 34px;
+        padding-bottom: 8px;
+    }
+    .customer-text {
+        font-size: 70%;
+        padding-bottom: 0;
+    }
+    .customer-text i {
+        font-size: 20px;
+    }
+    .btn-blue {
+        margin-top: 20px;
+        padding: 8px 30px;
+    }
+    /* --------customer--services---- */
+    .customer-services {
+        width: 100%;
+        margin: 40px auto 0;
+        padding: 0 15px;
+    }
+    .customer-services-column-one,
+    .customer-services-column-two {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .customer-services h3 {
+        font-size: 24px;
+        line-height: 34px;
+        padding: 0 0 30px;
+    }
+    .customer-serv-text,
+    .customer-active {
+        font-size: 90%;
+        width: 100%;
+        padding: 13px 0;
+    }
+    .customer-services i {
+        font-size: 20px;
+    }
+    /* --------testimonials---------- */
+    .testimonials-wrapper {
+        width: 100%;
+        margin: 40px auto 0;
+    }
+    .testimonials-col-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .test-col {
+        width: 80%;
+        margin: 15px auto 0;
+        float: none;
+    }
+    .arrows {
+        float: none;
+        width: max-content;
+        margin: 0 auto 0;
+    }
+    .h3 {
+        float: none;
+        width: 80%;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+    .h3 h3 {
+        font-size: 30px;
+        line-height: 53px;
+        padding: 30px 0 0 0;
+        text-align: center;
+    }
+    .test-text {
+        font-size: 21px;
+        line-height: 36px;
+    }
+    .author-name {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .author-desg {
+        font-size: 12px;
+    }
+    /* -------customer-links-------- */
+    .customer-links {
+        width: 100%;
+        margin: 45px auto 0;
+        padding: 0 15px;
+    }
+    .customer-links-col-one,
+    .customer-links-col-two {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    .customer-links h3 {
+        font-size: 27px;
+        line-height: 50px;
+        padding-bottom: 13px;
+    }
+    .links-text {
+        font-size: 90%;
+        width: 100%;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .customer-links i {
+        font-size: 20px;
+        vertical-align: bottom;
+        margin-top: 6px;
+    }
+    /* ---------blog--sec-------- */
+    .blog-sec {
+        margin: 30px auto 0;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .blog-sec h3 {
+        font-size: 22px;
+        line-height: 44px;
+    }
+    .blog-sec-column {
+        width: 80%;
+        margin: 20px auto 0;
+        float: none;
+    }
+    .pf-img {
+        vertical-align: middle;
+        margin-right: 12px;
+        height: 38px;
+        width: 38px;
+        line-height: 0;
+    }
+    /* -------form-submit-------- */
+    .submit {
+        width: 100%;
+        margin: 40px auto 0;
+        padding: 40px 15px;
+    }
+    .form-column-wrapper {
+        margin: 0 auto;
+    }
+    .form-col-email,
+    .form-col-btn {
+        float: none;
+        margin: 50px auto 0;
+    }
+    .submit h3 {
+        padding: 0;
+        font-size: 31px;
+        line-height: 48px;
+    }
+    /* -----footer-------------- */
+    footer {
+        width: 100%;
+        margin: 40px auto 0;
+        padding: 0 15px 20px;
+    }
+    .about,
+    .link-1,
+    .link-2,
+    .link-3 {
+        width: 100%;
+        margin: 0 0 20px;
+        float: none;
+    }
+    .links {
+        margin-bottom: 7px;
+    }
+    .links li {
+        margin-bottom: 8px;
+        width: max-content;
+    }
+    .ft-text {
+        padding: 17px 0;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+}
