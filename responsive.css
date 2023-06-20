@@ -33,31 +33,17 @@
     /* --------customer--contact---- */
     .customer-contact {
         width: 100%;
-        margin: 100px auto 0;
+        margin: 0 auto 0;
         padding: 0 15px;
     }
     .customer-contact-col-one {
-        margin: 0 auto;
         width: 40%;
-        float: left;
+        margin: 0;
     }
     .customer-contact-col-two {
-        margin: 0 auto;
-        float: right;
-        width: 50%;
+        width: 46%;
         padding: 35px 0 0;
-    }
-    .customer-contact-col-two h3 {
-        font-size: 28px;
-        line-height: 40px;
-        padding-bottom: 20px;
-    }
-    .customer-text {
-        font-size: 100%;
-        padding-bottom: 12px;
-    }
-    .customer-contact i {
-        font-size: 26px;
+        margin: 0;
     }
     /* --------customer--services---- */
     .customer-services {
@@ -65,26 +51,10 @@
         padding: 0 15px;
     }
     .customer-services-column-one {
-        width: 50%;
-        margin: 0 auto;
+        width: 42%;
     }
     .customer-services-column-two {
-        width: 40%;
-        margin: 0 auto;
-    }
-    .customer-services h3 {
-        font-size: 28px;
-        line-height: 40px;
-        padding: 0 0 30px;
-    }
-    .customer-serv-text,
-    .customer-active {
-        font-size: 87%;
-        width: 100%;
-        padding: 13px 0;
-    }
-    .customer-services i {
-        font-size: 20px;
+        width: 41%;
     }
     /* --------testimonials---------- */
     .testimonials-wrapper {
@@ -100,7 +70,7 @@
         left: 83%;
         top: 12%;
     }
-    .h3 h3 {
+    .test-caption h3 {
         padding-left: 11px;
         line-height: 68px;
         font-size: 42px;
@@ -135,12 +105,8 @@
         font-weight: 400;
         line-height: 62px;
     }
-    .blog-sec-column-wrapper {
-        margin: 0 auto;
-        max-width: 90%;
-    }
     .blog-sec-column {
-        width: calc(50% - 50px);
+        width: calc(33.33% - 50px);
         float: left;
         margin: 80px 25px 0;
     }
@@ -226,18 +192,64 @@
         margin-top: 40px;
     }
     /* ------service--sec--------- */
-    .services-sec-column-wrapper {
-        margin: 0 auto;
-        width: 75%;
-    }
     .services-sec-column {
-        width: calc(50% - 50px);
-        float: left;
-        margin: 50px 25px 0;
+        width: calc(50% - 100px);
+        margin: 50px 50px 0;
     }
     .services-sec h3 {
         font-size: 36px;
         line-height: 49px;
+    }
+    /* --------customer--contact---- */
+    .customer-contact {
+        width: 100%;
+        margin: 80px auto 0;
+        padding: 0 15px;
+    }
+    .customer-contact h3 {
+        font-size: 34px;
+        line-height: 44px;
+        padding-bottom: 24px;
+    }
+    .customer-contact-col-one {
+        width: 40%;
+        margin: 0;
+    }
+    .customer-contact-col-two {
+        width: 47%;
+        padding: 35px 0 0;
+        margin: 0;
+    }
+    .customer-text {
+        padding-bottom: 12px;
+        font-size: 100%;
+    }
+    /* --------customer--services---- */
+    .customer-services {
+        margin: 80px auto 0;
+        padding: 0 15px;
+    }
+    .customer-services-column-one {
+        width: 38%;
+    }
+    .customer-services-column-two {
+        width: 41%;
+    }
+    .customer-serv-text,
+    .customer-active {
+        font-size: 11px;
+        padding: 6px 0;
+        margin-bottom: 10px;
+    }
+    .customer-services i {
+        vertical-align: middle;
+        margin: 0 25px;
+        font-size: 15px;
+    }
+    .customer-services h3 {
+        font-size: 34px;
+        line-height: 44px;
+        padding: 40px 0;
     }
     /* --------testimonials---------- */
     .testimonials-wrapper {
@@ -257,7 +269,7 @@
         /* margin: 0 11px; */
         float: right;
     }
-    .h3 h3 {
+    .test-caption h3 {
         font-size: 36px;
         line-height: 68px;
         padding-left: 20px;
@@ -295,13 +307,9 @@
         font-size: 33px;
         line-height: 48px;
     }
-    .blog-sec-column-wrapper {
-        margin: 0 auto;
-        max-width: 90%;
-    }
     .blog-sec-column {
-        width: calc(50% - 30px);
-        margin: 60px 15px 0;
+        width: calc(50% - 50px);
+        margin: 60px 25px 0;
     }
     /* -------form-submit---- */
     .submit {
@@ -317,9 +325,23 @@
         margin: 0 auto 74px;
     }
     /* ----------footer--------------- */
+    footer {
+        width: 100%;
+        margin: 60px auto 0;
+        padding: 0 15px 60px;
+    }
+    .about {
+        margin: 0 52px 0 0;
+    }
+    .links {
+        float: right;
+    }
+    .link-1,
+    .link-2 {
+        margin-right: 46px;
+    }
     .ft-text {
         padding: 28px 0;
-        font-size: 15px;
         line-height: 29px;
     }
     .links li {
@@ -327,12 +349,6 @@
     }
     .links a {
         line-height: 27px;
-        font-size: 15px;
-    }
-    footer {
-        width: 100%;
-        margin: 60px auto 0;
-        padding: 0 15px 60px;
     }
 }
 
@@ -400,14 +416,13 @@
         margin-top: 40px;
     }
     /* ------services---sec---- */
-    .services-sec-column-wrapper {
-        margin: 0 auto;
-        max-width: 100%;
+    .services-sec {
+        width: 100%;
+        margin-bottom: 80px;
     }
     .services-sec-column {
-        width: calc(50% - 50px);
-        float: left;
-        margin: 50px 25px 0;
+        width: calc(50% - 100px);
+        margin: 50px 50px 0;
     }
     .services-sec h3 {
         font-size: 36px;
@@ -416,19 +431,27 @@
     /* -----customer--contact--sec---- */
     .customer-contact {
         width: 100%;
-        margin: 65px auto 0;
-        padding: 0 15px;
+        margin: 0 auto 0;
     }
-    .customer-contact-col-one,
+    .customer-contact-col-one {
+        width: 65%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
     .customer-contact-col-two {
-        width: 60%;
+        width: 80%;
         float: none;
         margin: 0 auto;
         padding: 0;
     }
     .customer-text {
-        font-size: 90%;
-        max-width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 24px;
+        color: black;
+        display: block;
     }
     /* --------customer--services---- */
     .customer-services {
@@ -436,25 +459,31 @@
         margin: 65px auto 0;
         padding: 0 15px;
     }
-    .customer-services-column-one,
-    .customer-services-column-two {
-        width: 60%;
-        margin: 0 auto;
+    .customer-services-column-one {
+        min-width: 80%;
         float: none;
+        margin: 0 auto;
+    }
+    .customer-services-column-two {
+        min-width: 65%;
+        float: none;
+        margin: 0 auto;
     }
     .customer-services h3 {
-        font-size: 28px;
-        line-height: 40px;
-        padding: 0 0 30px;
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 36px;
+        padding: 50px 0 60px;
     }
-    .customer-serv-text,
-    .customer-active {
-        font-size: 87%;
+    .customer-active,
+    .customer-serv-text {
+        padding: 18px 0;
+        font-size: 16px;
+        margin-bottom: 24px;
         width: 100%;
-        padding: 13px 0;
     }
     .customer-services i {
-        font-size: 20px;
+        font-size: 24px;
     }
     /* --------testimonials---------- */
     .testimonials-wrapper {
@@ -463,23 +492,21 @@
         padding: 0 15px;
     }
     .testimonials-col-wrapper {
-        width: 100%;
         margin: 0 auto;
+        max-width: 60%;
     }
     .test-col {
-        width: 60%;
+        width: 100%;
         margin: 40px auto 0;
     }
     .arrows {
-        float: none;
         margin: 15px auto 0;
     }
-    .h3 {
+    .test-caption {
         float: none;
-        width: 100%;
+        max-width: 100%;
     }
-    .h3 h3 {
-        width: 100%;
+    .test-caption h3 {
         font-size: 36px;
         line-height: 53px;
         padding: 30px 0 0 0
@@ -534,9 +561,12 @@
     }
     .about,
     .links {
-        width: 100%;
-        margin: 0 auto;
+        margin: 0;
         float: none;
+    }
+    .link-1,
+    .link-2 {
+        margin-right: 70px;
     }
     .ft-text {
         padding: 30px 0;
@@ -547,6 +577,7 @@
     .hero-section {
         width: 100%;
         padding: 0 15px;
+        margin: 0 auto;
     }
     .hero-section-content-container {
         width: 100%;
@@ -653,13 +684,23 @@
     .customer-text {
         font-size: 70%;
         padding-bottom: 0;
+        line-height: 32px;
     }
-    .customer-text i {
-        font-size: 20px;
+    .check {
+        height: 22px;
+        width: 22px;
+    }
+    .check img {
+        margin: 10px 8px;
+        display: block;
+        margin: 7px 7px;
+        display: block;
+        width: 10px;
+        height: 7px;
     }
     .btn-blue {
-        margin-top: 20px;
-        padding: 8px 30px;
+        padding: 8px 35px;
+        font-size: 16px;
     }
     /* --------customer--services---- */
     .customer-services {
@@ -679,17 +720,16 @@
         line-height: 34px;
         padding: 0 0 30px;
     }
-    .customer-serv-text,
-    .customer-active {
-        font-size: 90%;
-        width: 100%;
+    .customer-services ul li a {
+        font-size: 65%;
         padding: 13px 0;
+        max-width: 100%;
     }
     .customer-services i {
-        font-size: 20px;
+        font-size: 16px;
     }
     /* --------testimonials---------- */
-    .testimonials-wrapper {
+    /* .testimonials-wrapper {
         width: 100%;
         margin: 40px auto 0;
     }
@@ -707,13 +747,13 @@
         width: max-content;
         margin: 0 auto 0;
     }
-    .h3 {
+    .test-caption {
         float: none;
         width: 80%;
         margin: 0 auto 15px;
         text-align: center;
     }
-    .h3 h3 {
+    .test-caption h3 {
         font-size: 30px;
         line-height: 53px;
         padding: 30px 0 0 0;
@@ -729,7 +769,7 @@
     }
     .author-desg {
         font-size: 12px;
-    }
+    } */
     /* -------customer-links-------- */
     .customer-links {
         width: 100%;
@@ -758,20 +798,50 @@
         vertical-align: bottom;
         margin-top: 6px;
     }
+    /* -----------------testimonials--------------- */
+    .testimonials-col-wrapper {
+        margin: 50px auto 0;
+        max-width: 100%;
+    }
+    .test-col {
+        width: 100%;
+        margin: 40px auto 0;
+    }
+    .arrows {
+        margin: 15px auto 0;
+    }
+    .test-caption {
+        float: none;
+        max-width: 100%;
+    }
+    .test-caption h3 {
+        font-size: 36px;
+        line-height: 53px;
+        padding: 30px 0 0 0
+    }
+    .test-text {
+        font-size: 21px;
+        line-height: 36px;
+    }
+    .author-name {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .author-desg {
+        font-size: 12px;
+    }
     /* ---------blog--sec-------- */
     .blog-sec {
         margin: 30px auto 0;
         width: 100%;
-        padding: 0 15px;
     }
     .blog-sec h3 {
         font-size: 22px;
         line-height: 44px;
     }
     .blog-sec-column {
-        width: 80%;
-        margin: 20px auto 0;
-        float: none;
+        width: calc(100% - 50px);
+        margin: 60px 25px 0;
     }
     .pf-img {
         vertical-align: middle;
@@ -779,6 +849,9 @@
         height: 38px;
         width: 38px;
         line-height: 0;
+    }
+    .button-more {
+        margin-top: 40px;
     }
     /* -------form-submit-------- */
     .submit {
@@ -793,6 +866,7 @@
     .form-col-btn {
         float: none;
         margin: 50px auto 0;
+        max-width: 100%;
     }
     .submit h3 {
         padding: 0;
@@ -819,9 +893,14 @@
     .links li {
         margin-bottom: 8px;
         width: max-content;
+        font-size: 14px;
     }
     .ft-text {
         padding: 17px 0;
+        font-size: 14px;
+    }
+    .links li a {
+        font-size: 14px;
     }
     .copyright {
         font-size: 14px;
